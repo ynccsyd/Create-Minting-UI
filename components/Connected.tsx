@@ -10,6 +10,8 @@ import {
 } from "@chakra-ui/react"
 import { ArrowForwardIcon } from "@chakra-ui/icons"
 
+
+
 const Connected: FC = () => {
   return (
     <VStack spacing={20}>
