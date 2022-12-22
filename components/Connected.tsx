@@ -10,9 +10,17 @@ import {
 } from "@chakra-ui/react"
 import { ArrowForwardIcon } from "@chakra-ui/icons"
 
+import { useRouter } from "next/router";
 
 
 const Connected: FC = () => {
+  const router = useRouter()
+  // const handleClick = (e) => {
+  //   e.preventDefault()
+  //   router.push(newMint)
+  // }
+    
+  
   return (
     <VStack spacing={20}>
       <Container>
@@ -43,7 +51,7 @@ const Connected: FC = () => {
         <Image src="avatar5.png" alt="" />
       </HStack>
 
-      <Button bgColor="accent" color="white" maxW="380px">
+      <Button bgColor="accent" color="white" maxW="380px" onClick={() => router.push('/newMint')}>
         <HStack>
           <Text>mint buildoor</Text>
           <ArrowForwardIcon />
